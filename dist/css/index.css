@@ -195,3 +195,48 @@ form{
         display: block;
     }
 }
+
+/* Lower Midsection */
+.LowerMid{
+    display: flex;
+    background: border-box;
+    background-color: rgba(244, 244, 244, 0.832);
+    padding: 35px 25px;
+    justify-content: space-between;
+    text-align: center;
+        
+}
+
+.fa-icon {
+    font-size: 50px;
+  }
+
+.OurProp{
+    padding:10px 20px ;
+    background-color: white
+}
+
+.fa-icon2 {
+    font-size: 50px;
+  }
+
+.Prop4Sale{
+    padding:10px 20px ;
+    background-color: white
+}
+.fa-icon3 {
+    font-size: 50px;
+  }
+
+.RealEstate{
+    padding:10px 20px ; 
+    background-color: white
+}
+.fa-icon4 {
+    font-size: 50px;
+  }
+  
+.House4Sale{
+    padding:10px 20px ;
+    background-color: white   
+}
