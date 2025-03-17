@@ -11,6 +11,7 @@
     --clr-white-faint: #f2f2f2;
     --clr-dark-blue: #3b3b51;
     --clr-black: #000;
+    --clr-dark-blue-transperent: #3b3b519a;
 }
 /* Menu Styles */
 #menu{
@@ -118,26 +119,103 @@ form{
     font-size: 17px;
     margin: 0 10px;
 }
-
-/* Media Querry for mobiles */
-@media screen and (min-width: 0) and (max-width: 750px) {
-    .nav-links{
-        display: none;
-    }
-    .menu-icon{
-        display: block;
-    }
+/* Properties Container */
+.textp button{
+    background: var(--clr-sea-green);
+    color: var(--clr-white-default);
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 10px 30px;
+}
+.textp h2{
+    color: var(--clr-sea-green);
+}
+.textp{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+.grid-img{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.grid-img hr{
+    width: 100px;
+}
+.grid-img img{
+    width: 300px;
+}
+.G1{
+    box-shadow: 0 0 3px #020202;
+}
+.G2{
+    box-shadow: 0 0 3px #020202;
+}
+.G3{
+    box-shadow: 0 0 3px #020202;
+}
+.grid-img button{
+    background: var(--clr-sea-green);
+    color: var(--clr-white-default);
+    font-size: 20px;
+    border: none;
+    border-radius: 40px;
+    margin: 20px;
+    padding: 10px 10px;
+    width: 46%;
+    height: 9%;
+}
+.grid-img i{
+    color: #35353573;  
+}
+.G1 h3{
+    color: var(--clr-sea-green);
+}
+.G2 h3{
+    color: var(--clr-sea-green);
+}
+.G3 h3{
+    color: var(--clr-sea-green);
+}
+.G1{
+    box-shadow: #005555;
 }
 
 /* Lower Midsection */
 .LowerMid{
-    display: flex;
+    display: grid;
     background: border-box;
     background-color: rgba(244, 244, 244, 0.832);
     padding: 35px 25px;
-    justify-content: space-between;
-    text-align: center;
-        
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+    text-align: center;     
+}
+.LowerMid div{
+    background: var(--clr-white-default);
+    padding: 15px 20px;
+}
+.LowerMid div i{
+    margin: 15px 0;
+        font-size: 50px;
+}
+.LowerMid div p{
+    line-height: 1.8;
+}
+.LowerMid button{
+        padding: 20px 0;
+        background: transparent;
+        border: none;
+}
+.LowerMid div button a{
+    text-decoration: none;
+    color: var(--clr-black);
+    border-bottom: 2px solid var(--clr-sea-green);
 }
 
 .fa-icon {
@@ -172,4 +250,31 @@ form{
 .House4Sale{
     padding:10px 20px ;
     background-color: white   
+}
+
+/* Media Querry for mobiles */
+@media screen and (min-width: 0) and (max-width: 750px) {
+    .nav-links{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menu{
+        margin: 20px 20px;
+    }
+    .home-contents h2{text-align: center; font-size: 2.5rem;}
+    .home-contents form{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Lower Mid */
+    .LowerMid{
+        grid-template-columns: auto;
+    }
+    .LowerMid div {
+        margin: 20px 10px;
+    }
 }
