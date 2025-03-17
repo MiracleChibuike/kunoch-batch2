@@ -189,6 +189,72 @@ form{
     margin: 20px;
 }
 
+/* Lower Midsection */
+.LowerMid{
+    display: grid;
+    background: border-box;
+    background-color: rgba(244, 244, 244, 0.832);
+    padding: 35px 25px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+    text-align: center;     
+}
+.LowerMid div{
+    background: var(--clr-white-default);
+    padding: 15px 20px;
+}
+.LowerMid div i{
+    margin: 15px 0;
+        font-size: 50px;
+}
+.LowerMid div p{
+    line-height: 1.8;
+}
+.LowerMid button{
+        padding: 20px 0;
+        background: transparent;
+        border: none;
+}
+.LowerMid div button a{
+    text-decoration: none;
+    color: var(--clr-black);
+    border-bottom: 2px solid var(--clr-sea-green);
+}
+
+.fa-icon {
+    font-size: 50px;
+  }
+
+.OurProp{
+    padding:10px 20px ;
+    background-color: white
+}
+
+.fa-icon2 {
+    font-size: 50px;
+  }
+
+.Prop4Sale{
+    padding:10px 20px ;
+    background-color: white
+}
+.fa-icon3 {
+    font-size: 50px;
+  }
+
+.RealEstate{
+    padding:10px 20px ; 
+    background-color: white
+}
+.fa-icon4 {
+    font-size: 50px;
+  }
+  
+.House4Sale{
+    padding:10px 20px ;
+    background-color: white   
+}
+
 /* Media Querry for mobiles */
 @media screen and (min-width: 0) and (max-width: 750px) {
     .nav-links{
@@ -197,21 +263,5 @@ form{
     .menu-icon{
         display: block;
     }
-}
-@media screen and (min-width: 0) and (max-width: 750px) {
-    .G3{
-        margin-top: 10px;
-    }
-    .G2{
-        margin-top: 10px;
-    }
-    .G1{
-        margin-top: 10px;
-    }
-    .grid-img{
-        display:grid;
-        grid-template-columns: auto;
-        margin: 10px;
-        
     }
 }
