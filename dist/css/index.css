@@ -281,4 +281,19 @@ form{
     .LowerMid div {
         margin: 20px 10px;
     }
+    .G3{
+        margin-top: 10px;
+    }
+    .G2{
+        margin-top: 10px;
+    }
+    .G1{
+        margin-top: 10px;
+    }
+    .grid-img{
+        display:grid;
+        grid-template-columns: auto;
+        margin: 10px;
+        
+    }
 }
