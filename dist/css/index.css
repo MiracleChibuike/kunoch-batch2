@@ -185,6 +185,9 @@ form{
 .G1{
     box-shadow: #005555;
 }
+.textp{
+    margin: 20px;
+}
 
 /* Media Querry for mobiles */
 @media screen and (min-width: 0) and (max-width: 750px) {
@@ -193,5 +196,22 @@ form{
     }
     .menu-icon{
         display: block;
+    }
+}
+@media screen and (min-width: 0) and (max-width: 750px) {
+    .G3{
+        margin-top: 10px;
+    }
+    .G2{
+        margin-top: 10px;
+    }
+    .G1{
+        margin-top: 10px;
+    }
+    .grid-img{
+        display:grid;
+        grid-template-columns: auto;
+        margin: 10px;
+        
     }
 }
