@@ -70,20 +70,34 @@
 .nav-links ul li{
     padding: 0 15px;
 }
+.store{
+    background: var(--clr-white-faint);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    box-shadow: 0 3.19px 6.38px rgba(0, 0, 0, 0.132), 0 10px 20px rgba(0, 0, 0, 0.19);
+}
 /* Home */
 #home{
-    background: linear-gradient(rgb(100, 100, 100, 0.4), rgb(100, 100, 100, 0.1)),
-    url(https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdXNlfGVufDB8fDB8fHww) no-repeat center/cover;
     height: 100vh;
     position: relative;
     bottom: 50px;
     /* z-index: -100; */
 }
+#home-img{
+    height: 100vh;
+    filter: brightness(60%);
+    /* width: 100%; */
+}
 .home-contents{
     display: grid;
     place-content: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     color: var(--clr-white-default);
+    position: relative;
+    top: -400px;
 }
 .home-contents h2{
     font-size: 3rem;
@@ -96,10 +110,11 @@ form{
 #search-zip{
     padding: 20px 35px;
     width: 70%;
-    border-radius: 30px;
+    border-radius: 50px;
     border: 1px solid var(--clr-white-default);
     font-size: 20px;
     outline: none;
+
 }
 #search-zip:focus{
     outline: 3px solid var(--clr-sea-green);
@@ -117,7 +132,7 @@ form{
     border: none;
     border-radius: 50px;
     font-size: 17px;
-    margin: 0 10px;
+    /* margin: 0 10px; */
 }
 /* Properties Container */
 .textp button{
@@ -199,6 +214,15 @@ form{
 .LowerMid div{
     background: var(--clr-white-default);
     padding: 15px 20px;
+    box-shadow: 0 5.9px 3px var(--clr-white-faint);
+        transition: transform background-color 0.9s ease, color 0.9s ease;
+    border: 3px solid var(--clr-white-faint);
+}
+.LowerMid div:hover{
+    transition: .5s ease;
+    transform: translateY(-10px);;
+    cursor: pointer;
+    box-shadow: 0 2.8px 10px var(--clr-dark-blue-transperent);
 }
 .LowerMid div i{
     margin: 15px 0;
@@ -253,7 +277,7 @@ form{
 }
 
 /* Media Querry for mobiles */
-@media screen and (min-width: 0) and (max-width: 750px) {
+@media screen and (min-width: 0) and (max-width: 850px) {
     .nav-links{
         display: none;
     }
@@ -271,12 +295,17 @@ form{
     }
     #search-zip{
         width: 100%;
-        margin: 10px 0;
+        margin: 15px 15px;
+        width: 95%;
+    }
+    #Search-btn{
+        margin: 0 10px;
     }
 
     /* Lower Mid */
     .LowerMid{
-        grid-template-columns: auto;
+        display: flex;
+        flex-wrap: wrap;
     }
     .LowerMid div {
         margin: 20px 10px;
