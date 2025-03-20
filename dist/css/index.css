@@ -72,18 +72,34 @@
 }
 /* Home */
 #home{
-    background: linear-gradient(rgb(100, 100, 100, 0.4), rgb(100, 100, 100, 0.1)),
-    url(https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdXNlfGVufDB8fDB8fHww) no-repeat center/cover;
+    background: linear-gradient(rgb(100, 100, 100, 0.4), rgb(100, 100, 100, 0.1)),;
     height: 100vh;
     position: relative;
     bottom: 50px;
     /* z-index: -100; */
 }
+#home-img{
+    height:100vh ;
+    filter: brightness(60%);
+    
+
+}
+.bottom{
+    background: rgb(182, 180, 180);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    box-shadow: #f1cccc;
+}
 .home-contents{
     display: grid;
     place-content: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     color: var(--clr-white-default);
+    position: relative;
+    top: -390px;
 }
 .home-contents h2{
     font-size: 3rem;
@@ -143,12 +159,13 @@ form{
     grid-template-columns: auto auto auto;
     margin-bottom: 40px;
     margin-top: 40px;
+    
 }
 .grid-img hr{
     width: 100px;
 }
 .grid-img img{
-    width: 300px;
+    width: 500px;
 }
 .G1{
     box-shadow: 0 0 3px #020202;
@@ -251,6 +268,52 @@ form{
     padding:10px 20px ;
     background-color: white   
 }
+/* Customer styl */
+.customer1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    
+}
+.customer1 i{
+    color: #ffa500;
+    margin: 12px 0;
+}
+.customer1 h2{
+    font-weight: bold;
+}
+.customer1 small{
+    color: #005555b9;
+    font-size: 1.2rem;
+}
+.c1{
+    margin-left: 2px;
+    margin-right: 5px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 300px;
+}
+.c2{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.c3{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.customer img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+.customer p{
+    font-size: 1.1rem;
+}
 
 /* Media Querry for mobiles */
 @media screen and (min-width: 0) and (max-width: 750px) {
@@ -291,5 +354,10 @@ form{
         grid-template-columns: auto;
         margin: 10px;
         
+    }
+    /* customer mobile  */
+    .customer1{
+        display: block;
+        padding: 10px 20px;
     }
 }
